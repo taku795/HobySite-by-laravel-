@@ -19,8 +19,8 @@ class ContentFactory extends Factory
         $user = User::factory()->create();
         return [
             'user_id'=>$user->user_id,
-            'title'=>$this->faker->title,
-            'content'=>$this->faker->realText($maxNbChars = 50, $indexSize = 2),
+            'title'=>$this->faker->realText(15),
+            'content'=>$this->faker->realText(),
             'day'=>$this->faker->dateTime()
         ];
     }

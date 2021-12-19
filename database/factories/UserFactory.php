@@ -18,7 +18,8 @@ class UserFactory extends Factory
     {
         return [
             'user_id'=>$this->faker->userName(),
-            'password'=>$this->faker->password()
+            'user_password'=>$this->faker->password(),
+            'user_name'=>$this->faker->name()
         ];
     }
 }

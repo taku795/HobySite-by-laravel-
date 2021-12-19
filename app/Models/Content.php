@@ -15,8 +15,8 @@ class Content extends Model
     protected $fillable=
     [
         'title',
-        'text',
-        'time'
+        'content',
+        'day'
     ];
 
     /**
