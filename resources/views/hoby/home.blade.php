@@ -2,6 +2,14 @@
 
 @section('title','ホーム画面')
 @section('content')
+
+@if($user=='gestuser')
+    <button>ログイン</button>
+    <button>新規登録</button>
+@else
+{{$user->user_name}}
+@endif
+
 <h1>記事一覧</h1>
 
 <table>
