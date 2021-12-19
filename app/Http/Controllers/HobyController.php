@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Content;
 
 class HobyController extends Controller
 {
@@ -12,6 +14,11 @@ class HobyController extends Controller
      * @return view
      * */ 
     public function showHome() {
-        return view('hoby.home');
+        $content=Content::all();
+        
+        return view('hoby.home',
+        [
+            'content'=>$content
+        ]);
     }
 }
