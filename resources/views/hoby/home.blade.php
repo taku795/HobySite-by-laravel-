@@ -4,8 +4,8 @@
 @section('content')
 
 @if($user=='gestuser')
-    <button>ログイン</button>
-    <button>新規登録</button>
+    <a href="/LoginPage">ログイン</a>
+    <a href="/NewUser">新規登録</a>
 @else
 {{$user->user_name}}
 @endif

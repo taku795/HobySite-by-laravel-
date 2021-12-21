@@ -18,6 +18,12 @@ use App\Http\Controllers\HobyController;
 Route::get('/',[HobyController::class,'showHome'])->name('home');
 
 //ログイン処理
+Route::get('/LoginPage',[HobyController::class,'showLoginPage'])->name('loginpage');
+Route::get('/login',[HobyController::class,'Login'])->name('login');
+
+//新規登録
+Route::get('/NewUser',[HobyController::class,'showNewUserPage'])->name('newuserpage');
+Route::get('/setNewUser',[HobyController::class,'setNewUser'])->name('newuser');
 
 //記事投稿
 

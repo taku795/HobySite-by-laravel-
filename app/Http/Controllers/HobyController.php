@@ -38,4 +38,37 @@ class HobyController extends Controller
             'user'=>$user
         ]);
     }
+
+    /** 
+     * ログイン画面を表示
+     * 
+     * @return view
+     * */ 
+    public function showLoginPage() {
+        return view('hoby.login-page');
+    }
+    /** 
+     * ログイン処理
+     * 
+     * @return view
+     * */ 
+    public function Login() {
+        return view('hoby.login-page');
+    }
+    /** 
+     * 新規登録画面を表示
+     * 
+     * @return view
+     * */ 
+    public function showNewUserPage() {
+        return view('hoby.newuser');
+    }
+    /** 
+     * 新規登録処理
+     * 
+     * @return view
+     * */ 
+    public function setNewUser() {
+        return view('hoby.newuser');
+    }
 }
